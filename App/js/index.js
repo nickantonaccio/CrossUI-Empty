@@ -46,8 +46,8 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.ComboInput")
                 .setHost(host,"xui_ui_comboinput3")
-                .setLeft("43.42857142857143em")
-                .setTop("3.0476190476190474em")
+                .setLeft("24.685714285714287em")
+                .setTop("-0.3047619047619048em")
                 .setWidth("18em")
                 .setPosition("relative")
                 .setLabelSize("8em")
