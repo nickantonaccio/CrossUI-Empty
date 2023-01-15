@@ -19,7 +19,65 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input5")
+                .setLeft("1.5238095238095237em")
+                .setTop("3.0476190476190474em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Input")
+            );
+            
+            append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input6")
+                .setLeft("23.61904761904762em")
+                .setTop("3.0476190476190474em")
+                .setWidth("18em")
+                .setHeight("10em")
+                .setPosition("relative")
+                .setLabelSize("8em")
+                .setLabelCaption("Text Area")
+                .setMultiLines(true)
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput3")
+                .setLeft("43.42857142857143em")
+                .setTop("3.0476190476190474em")
+                .setWidth("18em")
+                .setPosition("relative")
+                .setLabelSize("8em")
+                .setLabelCaption("Drop List Input")
+                .setType("listbox")
+                .setItems([
+                    {
+                        "id" : "a",
+                        "caption" : "item 1",
+                        "imageClass" : "xui-icon-number1"
+                    },
+                    {
+                        "id" : "b",
+                        "caption" : "item 2",
+                        "imageClass" : "xui-icon-number2"
+                    },
+                    {
+                        "id" : "c",
+                        "caption" : "item 3",
+                        "imageClass" : "xui-icon-number3"
+                    },
+                    {
+                        "id" : "d",
+                        "caption" : "item 4",
+                        "imageClass" : "xui-icon-number4",
+                        "disabled" : true
+                    }
+                ])
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
