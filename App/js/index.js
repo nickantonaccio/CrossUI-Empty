@@ -21,61 +21,49 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input5")
-                .setLeft("1.5238095238095237em")
+                xui.create("xui.UI.Group")
+                .setHost(host,"xui_ui_group1")
+                .setLeft("2.2857142857142856em")
                 .setTop("3.0476190476190474em")
                 .setWidth("18em")
-                .setLabelSize("8em")
-                .setLabelCaption("Input")
+                .setCaption("Group")
+                .setToggleBtn(false)
             );
             
             append(
-                xui.create("xui.UI.Input")
-                .setHost(host,"xui_ui_input6")
+                xui.create("xui.UI.Block")
+                .setHost(host,"xui_ui_block7")
+                .setLeft("22.857142857142858em")
+                .setTop("3.8095238095238093em")
+                .setPosition("relative")
+                .setDisplay("inline-block")
+            );
+            
+            append(
+                xui.create("xui.UI.Block")
+                .setHost(host,"xui_ui_block8")
                 .setLeft("23.61904761904762em")
-                .setTop("3.0476190476190474em")
-                .setWidth("18em")
-                .setHeight("10em")
+                .setTop("4.571428571428571em")
                 .setPosition("relative")
-                .setLabelSize("8em")
-                .setLabelCaption("Text Area")
-                .setMultiLines(true)
+                .setDisplay("inline-block")
             );
             
             append(
-                xui.create("xui.UI.ComboInput")
-                .setHost(host,"xui_ui_comboinput3")
-                .setLeft("24.685714285714287em")
-                .setTop("-0.3047619047619048em")
-                .setWidth("18em")
+                xui.create("xui.UI.Block")
+                .setHost(host,"xui_ui_block9")
+                .setLeft("24.38095238095238em")
+                .setTop("5.333333333333333em")
                 .setPosition("relative")
-                .setLabelSize("8em")
-                .setLabelCaption("Drop List Input")
-                .setType("listbox")
-                .setItems([
-                    {
-                        "id" : "a",
-                        "caption" : "item 1",
-                        "imageClass" : "xui-icon-number1"
-                    },
-                    {
-                        "id" : "b",
-                        "caption" : "item 2",
-                        "imageClass" : "xui-icon-number2"
-                    },
-                    {
-                        "id" : "c",
-                        "caption" : "item 3",
-                        "imageClass" : "xui-icon-number3"
-                    },
-                    {
-                        "id" : "d",
-                        "caption" : "item 4",
-                        "imageClass" : "xui-icon-number4",
-                        "disabled" : true
-                    }
-                ])
+                .setDisplay("inline-block")
+            );
+            
+            append(
+                xui.create("xui.UI.Block")
+                .setHost(host,"xui_ui_block10")
+                .setLeft("25.142857142857142em")
+                .setTop("6.095238095238095em")
+                .setPosition("relative")
+                .setDisplay("inline-block")
             );
             
             return children;
