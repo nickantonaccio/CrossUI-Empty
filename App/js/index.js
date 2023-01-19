@@ -24,7 +24,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Group")
                 .setHost(host,"xui_ui_group1")
                 .setLeft("2.2857142857142856em")
-                .setTop("3.0476190476190474em")
+                .setTop("1.5238095238095237em")
                 .setWidth("18em")
                 .setCaption("Group")
                 .setToggleBtn(false)
