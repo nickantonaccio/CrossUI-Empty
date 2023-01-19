@@ -43,7 +43,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Block")
                 .setHost(host,"xui_ui_block8")
                 .setLeft("23.61904761904762em")
-                .setTop("4.571428571428571em")
+                .setTop("3.8095238095238093em")
                 .setPosition("relative")
                 .setDisplay("inline-block")
             );
@@ -52,7 +52,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Block")
                 .setHost(host,"xui_ui_block9")
                 .setLeft("24.38095238095238em")
-                .setTop("5.333333333333333em")
+                .setTop("3.8095238095238093em")
                 .setPosition("relative")
                 .setDisplay("inline-block")
             );
@@ -61,7 +61,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Block")
                 .setHost(host,"xui_ui_block10")
                 .setLeft("25.142857142857142em")
-                .setTop("6.095238095238095em")
+                .setTop("3.8095238095238093em")
                 .setPosition("relative")
                 .setDisplay("inline-block")
             );
